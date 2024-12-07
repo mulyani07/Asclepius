@@ -5,7 +5,6 @@ const InputError = require("../exceptions/InputError");
 
 async function predictClassification(model, image) {
 	try {
-		if (image.length > 1024 * 1024) throw new InputError("Ukuran gambar terlalu besar. Maksimum 1MB.");
 
 		const tensor            = tf.node.decodeJpeg(image).resizeNearestNeighbor([224, 224]).expandDims().toFloat();
 		const prediction        = model.predict(tensor);
