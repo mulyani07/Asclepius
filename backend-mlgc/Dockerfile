@@ -9,7 +9,7 @@ COPY . .
 
 ENV APP_ENV=production
 ENV APP_PORT=8080
-ENV MODEL_URL="[MODEL URL]"
+ENV MODEL_URL="https://storage.googleapis.com/modelml07/models/model.json"
 ENV PROJECT_ID="[PROJECT ID]"
 
 CMD [ "npm", "start" ]
