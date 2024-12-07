@@ -10,7 +10,7 @@ COPY . .
 ENV APP_ENV=production
 ENV APP_PORT=8080
 ENV MODEL_URL="https://storage.googleapis.com/modelml07/models/model.json"
-ENV PROJECT_ID="[PROJECT ID]"
+ENV PROJECT_ID="submissionmlgc-mulyani"
 
 CMD [ "npm", "start" ]
 
